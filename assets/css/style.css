@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body{
+    background-image: url('../imagens/bg.jpg');
+    background-size: cover;
+    background-position: end;
+}
+.container{
+    background-color: #d1d1d1;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px auto 0 auto;
+}
+.input-task{
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+.button-task{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #003329;
+    color: #fff;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 400;
+}
+
+.button-task:hover{
+    opacity: 0.7;
+}
+
+.button-task:active{
+    opacity: 0.4;
+}
+.list-task{
+    width: 100%;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.list-task li{
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0,2);
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+img{
+    height: 25px;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity .5s ease-in-out;
+}
+
+.list-tasks:hover img{
+    opacity: 1;
+}
+
+.done{
+    text-decoration: line-through;
+}
